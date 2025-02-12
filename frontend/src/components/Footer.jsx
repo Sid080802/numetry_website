@@ -10,7 +10,7 @@ const Footer = () => {
           
           {/* Left - Logo */}
           <div className="col-md-3 text-md-start text-center">
-            <img src="/images/numetry-logo.jpg" alt="Company Logo" className="footer-logo img-fluid" />
+            <img src="/footer/numetry-logo.jpg" alt="Company Logo" className="footer-logo img-fluid" />
           </div>
 
           {/* Middle - Links */}
