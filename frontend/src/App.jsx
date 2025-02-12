@@ -6,7 +6,7 @@ import Home from './pages/Home';
 // import ContactUs from './pages/ContactUs';
 // import HireDeveloper from './pages/HireDeveloper';
 // import TrainingCourses from './pages/TrainingCourses';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -26,8 +26,8 @@ const App = () => {
           <Route path="/careerpage" element={<CareerPage />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/hiredeveloper" element={<HireDeveloper />} />
-          <Route path="/trainingcourses" element={<TrainingCourses />} />
-          <Route path="/footer" element={<Footer />} /> */}
+          <Route path="/trainingcourses" element={<TrainingCourses />} /> */}
+          <Route path="/footer" element={<Footer />} />
         </Routes>
       </div>
     </Router>
