@@ -1,30 +1,15 @@
 import React from "react";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>Welcome to Our Website</h1>
-      <p style={styles.paragraph}>
-        We provide top-notch services to help you achieve your goals. Explore our website to learn more.
-      </p>
+    <div className="home-container">
+      <video className="background-video" src="/assets/home.mp4" autoPlay loop muted></video>
+      <div className="content">
+        <button className="btn btn-outline-primary">Explore</button>
+      </div>
     </div>
   );
-};
-
-// Inline styles (optional)
-const styles = {
-  container: {
-    textAlign: "center",
-    padding: "50px",
-  },
-  heading: {
-    fontSize: "2.5rem",
-    color: "#333",
-  },
-  paragraph: {
-    fontSize: "1.2rem",
-    color: "#555",
-  },
 };
 
 export default Home;

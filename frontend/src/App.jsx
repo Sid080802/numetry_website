@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
 import HireDeveloper from './pages/HireDeveloper';
 import Footer from './components/Footer';
+
 import './App.css';
 
 const App = () => {
