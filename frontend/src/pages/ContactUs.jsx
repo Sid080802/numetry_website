@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import '../styles/ContactUs.css'; 
 import { motion } from 'framer-motion';
 
-const ContactPage = () => {
+const ContactUs = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -95,13 +94,6 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
-=======
-import React from "react";
-
-const ContactUs = () => {
-  return <h1>Contact Us Page</h1>;
-};
-
 export default ContactUs;
->>>>>>> b1857f323f4b878d9b4d9aff7d993519e6f89c97
+
+
