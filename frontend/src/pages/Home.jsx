@@ -1,39 +1,28 @@
 import React from "react";
-import "../styles/Home.css";
-import MeetTheTeam from "./MeetTheTeam"; // Import the MeetTheTeam component
-import Cards from './Cards'
+import MeetTheTeam from "./MeetTheTeam";
+import Cards from './Cards';
 import Stats from "./Stats";
 import IndustryCharts from './IndustryChart';
 import VideoSrc from './VideoSrc';
-const Home = () => {
-  const scrollToTeam = () => {
-    const teamSection = document.getElementById("meet-the-team");
-    if (teamSection) {
-      teamSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
+const Home = () => {
   return (
-    <div>
-     
-     <div id="video" className="mt-12">
+    <div className="home"> {/* Wrap everything inside a container */}
+      <div id="video">
         <VideoSrc/>
-      </div>
-    
-      <div id="stats" className="mt-12">
+      </div> 
+      <div id="stats">
         <Stats />
       </div>
-      <div id="cards" className="mt-12">
+      <div id="cards">
         <Cards />
       </div>
-
-      <div id="meet-the-team" className="mt-12">
+      <div id="meet-the-team">
         <MeetTheTeam />
       </div>
-      <div id="IndustryChart" className="mt-12">
+      <div id="IndustryChart">
         <IndustryCharts />
       </div> 
-     
     </div>
   );
 };

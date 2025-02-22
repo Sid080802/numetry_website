@@ -10,7 +10,7 @@ const VideoSrc = () => {
   };
 
   return (
-    <div className="home-container">
+    <div className="video-container">
       <video className="background-video" src="/assets/home.mp4" autoPlay loop muted></video>
       <div className="content">
         <button className="btn btn-outline-primary" onClick={scrollToTeam}>
