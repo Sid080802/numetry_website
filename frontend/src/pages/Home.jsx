@@ -4,6 +4,7 @@ import MeetTheTeam from "./MeetTheTeam"; // Import the MeetTheTeam component
 import Cards from './Cards'
 import Stats from "./Stats";
 import IndustryCharts from './IndustryChart';
+import VideoSrc from './VideoSrc';
 const Home = () => {
   const scrollToTeam = () => {
     const teamSection = document.getElementById("meet-the-team");
@@ -14,17 +15,11 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <div className="home-container">
-        <video className="background-video" src="/assets/home.mp4" autoPlay loop muted></video>
-        <div className="content">
-          <button className="btn btn-outline-primary" onClick={scrollToTeam}>
-            Explore
-          </button>
-          <div className="arrow-down">&#x2193;</div>
-        </div>
+     
+     <div id="video" className="mt-12">
+        <VideoSrc/>
       </div>
-
+    
       <div id="stats" className="mt-12">
         <Stats />
       </div>
@@ -32,13 +27,12 @@ const Home = () => {
         <Cards />
       </div>
 
-      {/* Meet the Team Section */}
       <div id="meet-the-team" className="mt-12">
         <MeetTheTeam />
       </div>
       <div id="IndustryChart" className="mt-12">
         <IndustryCharts />
-      </div>
+      </div> 
      
     </div>
   );
