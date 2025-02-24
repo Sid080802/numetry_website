@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaReact, FaNodeJs, FaLaravel, FaAndroid, FaApple, FaMicrosoft, FaAngular } from "react-icons/fa";
 import "../styles/HireDeveloper.css";
+import Navbar from '../components/Navbar';
+
 
 const developers = [
   { name: ".NET Developer", key: "dotnet", icon: <FaMicrosoft /> },
@@ -16,6 +18,8 @@ const developers = [
 
 const HireDeveloper = () => {
   return (
+    <div>
+        <Navbar />
     <div className="hire-developer">
       <h1 className="title">Hire a Developer</h1>
       <div className="developer-grid">
@@ -26,7 +30,11 @@ const HireDeveloper = () => {
           </Link>
         ))}
       </div>
+     
     </div>
+
+    </div>
+    
   );
 };
 
