@@ -62,7 +62,7 @@ const DotNetDeveloper = () => {
       <div className="left-card">
  
   <h2>Why Hire Our .NET Developers?</h2>
-  <img src="../public/hireDeveloper/question-mark.webp" alt="Question Mark" className="question-mark" />
+  <img src="../hireDeveloper/question-mark.webp" alt="Question Mark" className="question-mark" />
 </div>
 
   <div className="right-content">
