@@ -1,9 +1,19 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html, body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Horizontal scrolling disable */
+  overflow-y: auto; /* Vertical scrolling enable */
 }
+
+  #root {
+  max-width:100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  background-color: black;
+}
+
+
 
 .logo {
   height: 6em;
