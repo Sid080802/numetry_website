@@ -4,10 +4,13 @@ import Cards from './Cards';
 import Stats from "./Stats";
 import IndustryCharts from './IndustryChart';
 import VideoSrc from './VideoSrc';
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="home"> {/* Wrap everything inside a container */}
+    <div className="home">
+       {/* Wrap everything inside a container */}
+       <Navbar/>
       <div id="video">
         <VideoSrc/>
       </div> 
