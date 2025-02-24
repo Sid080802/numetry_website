@@ -1,30 +1,30 @@
 import React from "react";
+import MeetTheTeam from "./MeetTheTeam";
+import Cards from './Cards';
+import Stats from "./Stats";
+import IndustryCharts from './IndustryChart';
+import VideoSrc from './VideoSrc';
 
 const Home = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>Welcome to Our Website</h1>
-      <p style={styles.paragraph}>
-        We provide top-notch services to help you achieve your goals. Explore our website to learn more.
-      </p>
+    <div className="home"> {/* Wrap everything inside a container */}
+      <div id="video">
+        <VideoSrc/>
+      </div> 
+      <div id="stats">
+        <Stats />
+      </div>
+      <div id="cards">
+        <Cards />
+      </div>
+      <div id="meet-the-team">
+        <MeetTheTeam />
+      </div>
+      <div id="IndustryChart">
+        <IndustryCharts />
+      </div> 
     </div>
   );
-};
-
-// Inline styles (optional)
-const styles = {
-  container: {
-    textAlign: "center",
-    padding: "50px",
-  },
-  heading: {
-    fontSize: "2.5rem",
-    color: "#333",
-  },
-  paragraph: {
-    fontSize: "1.2rem",
-    color: "#555",
-  },
 };
 
 export default Home;
